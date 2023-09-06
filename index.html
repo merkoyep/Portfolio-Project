@@ -3,210 +3,320 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio: Marco Yip</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Mono">
+        <title>Marco Yip's Portfolio</title>
     </head>
 
     <body>
 
         <header>
-            <h1>Marco Yip, BA</h1>
-            <blockquote>
-                BSC Candidate in Applied Computer Science at The Dominican University of California Dev Degree 
-                Intern at Shopify.
-            </blockquote>
-
-            <video width="200" controls autoplay muted>
-                <source src="IMG_6988-2.mp4" type="video/mp4">
-            </video>
-
+            <a href="#intro">
+                <img src="MarcoLogo.png" alt="M.Y. Logo" width="50">
+            </a>
+            
             <nav>
                 <ul>
                     <li>
-                        <a href="#about-me">About Marco</a>
+                        <a href="#about-me-header">About Marco</a>
                     </li>
                     <li>
-                        <a href="#skills">Skills</a>
+                        <a href="#skills-header">Skills</a>
                     </li>
                     <li>
-                        <a href="#education">Education</a>
+                        <a href="#education-header">Education</a>
                     </li>
                     <li>
-                        <a href="#work-experience">Work Experience</a>
+                        <a href="#work-experience-header">Work Experience</a>
+                    </li>
+                    <li>
+                        <a href="#follow-marco-header">Follow Marco!</a>
                     </li>
                 </ul>
-
             </nav>
+
         </header>
 
        
 
         <main>
 
-        <section id="about-me">
-            <h2>About Marco</h2>
+            <div id="intro">
+                <div class="back-video">
+                    <video autoplay loop muted>
+                        <source src="IMG_9839.mp4" type="video/mp4">
+                    </video>
+                </div>
 
-            <blockquote>
-                Marco is an aspiring software engineer based in Richmond, British Columbia, Canada.
-            </blockquote>
-        </section>
+                <div id="intro-text">
+                    <h1>Hello! I'm Marco.</h1>
 
-        <figure>
-            <img src="IMG_0873.jpg" width="360" alt="Image of Marco">
-            <figcaption>Marco, 2023</figcaption>
-        </figure>
-    
-        <section id="skills">
-            <h2>Skills</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>
-                        <abbr>HTML</abbr> (HyperText Markup Language)
-                    </li>
-                    <li>
-                        <abbr>CSS</abbr> (Cascading Style Sheets)
-                    </li>
-                    <li>JavaScript</li>
-                    <li>Youth Development</li>
-                    <li>Leadership</li>
-                    <li>Teamwork</li>
-                </ul>
-        </section>
+                    <blockquote>
+                        An aspiring software engineer based in <br>Richmond, BC, Canada.
+                    </blockquote>
+                </div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <h3>Bachelor of Science candidate</h3>
-            <h4>Dominican University of California: San Juan, California</h4>
-            <h5>
-                <time datetime="2023-08">August 2023</time> - Present
-            </h5>
-            <p>
-                Currently studying comptuer science in the Applied Computer Science Program. Learned how to do cool 
-                things with code, like putting a song into my own website!
-            </p>
-            <audio controls>
-                <source src="Website_Song.mp3" type="audio/mp3">
-            </audio>
-            <h6>Sample Courses</h6>
-            <ul>
-                <li>Introduction to Programming</li>
-                <li>Web Foundations</li>
-            </ul>
-            <img 
-                src="Dominican_University_of_California_Seal.jpg" 
-                width="200" 
-                alt="Dominican University of California Seal"
-            >
+            </div>
 
-            <h3>Bachelor of Arts, Major in Hisory, With Distinction</h3>
-            <h4>University of British Columbia: Vancouver, British Columbia</h4>
-            <h5>
-                <time datetime="2016-09">September 2019</time> - <time datetime="2021-04">April 2021</time>
-            </h5>
-            <p>Studied with a focus on the social histories of british colonization from the 15th to 20th centuries.</p>
-            <h6>Sample Courses</h6>
-            <ul>
-                <li>Introduction to Computer Programming</li>
-                <li>History of Canada: Moments that Matter</li>
-                <li>Sociology of Canada</li>
-            </ul>
-            <img src="ubc.png" width="200" alt="Logo of UBC">
 
-            <h3>Courses completed in Recreation Management</h3>
-            <h4>Langara College: Vancouver, British Columbia</h4>
-            <h5>
-                <time datetime="2019-01">January 2019</time> - <time datetime="2020-08">August 2020</time>
-            </h5>
-            <p>Studied recreation theory and management best practices.</p>
-            <h6>Sample Courses</h6>
-            <ul>
-                <li>Accounting for Managers</li>
-                <li>Human Resources Management</li>
-                <li>Community Health and Wellness</li>
-            </ul>
-            <img src="Langara.png" width="200" alt="Logo of Langara College">
+            <section id="about-me">
+               <h2 id="about-me-header">About Marco</h2>             
 
-        </section>
+                <div id="about-me-container">
 
-        <section id="work-experience">
-            <h2>Work Experience</h2>
+                <figure>
+                    <img src="IMG_0873.jpg" width="360" alt="Image of Marco">
+                    <figcaption>Marco Yip, 2023</figcaption>
+                </figure>
 
-            <h3>Dev Degree Intern</h3>
-            <h4>Shopify, Richmond, British Columbia (remote)</h4>
-            <h5>
-                <time 
-                datetime="2023-08">August 2023</time> - Present
-            </h5>
-            <h6>Responsibilities</h6>
-            <ul>
-                <li>
-                    Participates in developer skills training provided by Shopify. For example, Ruby, Rails, 
-                    JavaScript, and React.
-                </li>
-                <li>Gains hands-on developer experience through placements on teams throughout Shopify.</li>
-            </ul>
+                <p>
+                I was born and raised in Richmond, BC where I aspired to pursue a 
+                career where I could make an impact in my community. Through high 
+                school, I wanted to become a secondary school history teacher, 
+                because of my passion with mentoring others, and my interest in 
+                historical studies.
+                <br> 
+                <br>
+                To gain experience working with young people, I volunteered at City 
+                Centre Community Centre as a program assistant, and was hired as a 
+                program instructor when I was 15. I continued working part-time 
+                throughout high school and university, until 2018, where I was 
+                offered a full time position as a youth programmer at City Centre. 
+                I accepted the position and was able to complete my degree as a 
+                part-time student. Through this experience, I discovered my 
+                obsession with making an impact in the community as a youth 
+                worker.
+                <br>
+                <br>
+                In 2021, I graduated from UBC with a Bachelor of Arts in History 
+                with distinction. Concurrently, I was offered a position to work for 
+                the City of Richmond as a recreation programmer for City Centre 
+                Community Centre. I decided to continue my career in recreation, and 
+                attained a position as a Community Facilities Coordinator in 2022. 
+                <br>
+                <br>
+                While my role focused on the supervision and leadership of community 
+                recreation programs, I found that I was incredibly interested in 
+                creating digital solutions to business processes, and troubleshooting 
+                issues that we had with software in our business operations. At this 
+                point in my recreation career, I had the choice to pursue a more 
+                managerial position, continue as a programmer, or capitalize on my 
+                newfound interest to pursue a career as a software engineer and 
+                continue driving impact through technology.
+                <br>
+                <br>
+                Today, I am pursuing a Bachelor of Science in Applied Computer 
+                Science at the Dominican University of California. Additionally, 
+                I am a Dev Degree Intern at Shopify, where I am developing skills 
+                as a software engineer through hands-on experience, self-learning, 
+                and theoretical foundations.
+                </p>
 
-            <h3>Community Facilities Coordinator & Recreation Leader</h3>
-            <h4>City of Richmond, Richmond British Columbia</h4>
-            <h5>
-                <time datetime="2021-08">August 2021</time> - <time datetime="2023-06">June 2023</time>
-            </h5>
-            <h6>Responsibilities</h6>
-            <ul>
-                <li>
-                    Supervised and managed the day to day programming and operations of City Centre Community Centre, 
-                    served a diverse community of 80 000 residents.
-                </li>
-                <li>
-                    Hired, trained, and mentored a team of ~40 full time and part time staff, including coordinators, 
-                    youth workers, and program instructors.
-                </li>
-                <li>
-                    Liaised between stakeholders, members of the public and community partners in the development of 
-                    community focused and meaningful events and recreation programs.
-                </li>
-            </ul>
+            </div>
+            </section>
 
-            <h3>Youth Development Coordinator & Summer Coordinator</h3>
-            <h4>City Centre Community Association, Richmond British Columbia</h4>
-            <h5>
-                <time datetime="2019-08">August 2019</time> - <time datetime="2021-08">August 2021</time>
-            </h5>
-            <h6>Responsibilities</h6>
-            <ul>
-                <li>
-                    Coordinated and facilitated community recreaiton programs for children aged 6-10 and youth aged 
-                    11-18. Programs include LGBTQ+ Hangouts, Coding programs, Youth Leadership, and Summer Daycamps.
-                </li>
-                <li>
-                    Pioneered virtual youth leadership development programs during the peak of the COVID-19 pandemic. 
-                    Mentored 112 youth over the course of the 2021/22 school year, who collectively contributed over 
-                    3000 hours of community service.
-                </li>
-                <li>
-                    Designed tools to track and effectively implement safety procedures for summer daycamps, provided 
-                    childcare to families in need.
-                </li>
-            </ul>
 
+            <section id="skills">
+                <h2 id="skills-header">Skills</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>
+                            <abbr>HTML</abbr> (HyperText Markup Language)
+                        </li>
+                        <li>
+                            <abbr>CSS</abbr> (Cascading Style Sheets)
+                        </li>
+                        <li>JavaScript</li>
+                        <li>Leadership</li>
+                        <li>Teamwork</li>
+                    </ul>
+            </section>
+
+            <h2 id="education-header">Education</h2>
+            <section id="education-section">
+
+                <div class="education" id="dominican">
+                    <div class="heading-education">
+                    <img 
+                        src="Dominican_University_of_California_Seal.jpg" 
+                        width="200"
+                        height="150" 
+                        alt="Dominican University of California Seal">
+                    <h3>Bachelor of Science Candidate<br>Major in Applied Computer Science</h3>
+                </div>
+                    <h4>Dominican University of California</h4>
+                    <h4>San Juan, California</h4>
+                    <h5>
+                        <time datetime="2023-08">August 2023</time> - Present
+                    </h5>
+                    <p>
+                        Currently studying comptuer science in the Applied Computer Science Program. Learned how to do cool 
+                        things with code, like putting a song into my own website!
+                    </p>
+                    <audio controls>
+                        <source src="Website_Song.mp3" type="audio/mp3">
+                    </audio>
+                    <h6>Sample Courses</h6>
+                    <ul>
+                        <li>Introduction to Programming</li>
+                        <li>Web Foundations</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="education" id="UBC">
+                    <div class="heading-education">
+                        <img src="ubc.png" width="200" alt="Logo of UBC">
+                        <h3>Bachelor of Arts<br>Major in Hisory, With Distinction</h3>
+                    </div>
+                    <h4>The University of British Columbia</h4>
+                    <h4>Vancouver, British Columbia</h4>
+                    <h5>
+                        <time datetime="2016-09">September 2019</time> - <time datetime="2021-04">April 2021</time>
+                    </h5>
+                    <p>Studied with a focus on the social histories of british colonization from the 15th to 20th 
+                        centuries. Additional areas of study include earth sciences, sociology, and computer science.</p>
+                    <h6>Sample Courses</h6>
+                    <ul>
+                        <li>Introduction to Computer Programming</li>
+                        <li>History of Canada: Moments that Matter</li>
+                        <li>Sociology of Canada</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="education" id="Langara">
+                    <div class="heading-education">
+                        <img src="Langara.png" width="200" alt="Logo of Langara College">
+                        <h3>Coursework in Recreation Management</h3>
+                    </div>
+
+                    <h4>Langara College</h4>
+                    <h4>Vancouver, British Columbia</h4>
+                    <h5>
+                        <time datetime="2019-01">January 2019</time> - <time datetime="2020-08">August 2020</time>
+                    </h5>
+                    <p>Studied recreation theory and management best practices.</p>
+                    <h6>Sample Courses</h6>
+                    <ul>
+                        <li>Accounting for Managers</li>
+                        <li>Human Resources Management</li>
+                        <li>Community Health and Wellness</li>
+                    </ul>
+                    
+                </div>
+            </section>
+
+            <h2 id="work-experience-header">Work Experience</h2>
+            <section id="work-experience">
+
+                <div class="experience" id="devdegree">
+                    <div class="experience-header">
+                        <img src="devdegreelogo.png" alt="Dev Degree Logo" width="200">
+                        <h3 id="ddtext">Dev Degree Intern</h3>
+                        </div>
+                    <h4>Shopify, Richmond, British Columbia (remote)</h4>
+                    <h5>
+                        <time 
+                        datetime="2023-08">August 2023</time> - Present
+                    </h5>
+                    <br>
+                    <h6>Responsibilities</h6>
+                    <ul>
+                        <li>
+                            Participates in developer skills training provided by Shopify. For example, Ruby, Rails, 
+                            JavaScript, and React.
+                        </li>
+                        <li>Gains hands-on developer experience through placements on teams throughout Shopify.</li>
+                    </ul>
+                </div>
+
+                <div class="experience" id="cfc">
+                    <div class="experience-header">
+                        <img src="cityofrichmond-logo.jpg" alt="Logo of the City of Richmond" height="105" width="200">
+                        <h3>Community Facilities Coordinator & Recreation Leader</h3>
+                    </div>  
+                    <h4>City of Richmond, Richmond British Columbia</h4>
+                    <h5>
+                        <time datetime="2021-08">August 2021</time> - <time datetime="2023-06">June 2023</time>
+                    </h5>
+                    <br>
+                    <h6>Responsibilities</h6>
+                    <ul>
+                        <li>
+                            Supervised and managed the day to day programming and operations of City Centre Community Centre, 
+                            served a diverse community of 80 000 residents.
+                        </li>
+                        <li>
+                            Hired, trained, and mentored a team of ~40 full time and part time staff, including coordinators, 
+                            youth workers, and program instructors.
+                        </li>
+                        <li>
+                            Liaised between stakeholders, members of the public and community partners in the development of 
+                            community focused and meaningful events and recreation programs.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience" id="ydc">
+                    <div class="experience-header">
+                        <img id="c4logo" width="200" height="105" src="c4logo.png" alt="Logo of City Centre Community Association">
+                        <h3>Youth Development Coordinator & Summer Coordinator</h3>
+                    </div>
+                    <h4>City Centre Community Association, Richmond British Columbia</h4>
+                    <h5>
+                        <time datetime="2019-08">August 2019</time> - <time datetime="2021-08">August 2021</time>
+                    </h5>
+                    <br>
+                    <h6>Responsibilities</h6>
+                    <ul>
+                        <li>
+                            Coordinated and facilitated community recreaiton programs for children aged 6-10 and youth aged 
+                            11-18. Programs include LGBTQ+ Hangouts, Coding programs, Youth Leadership, and Summer Daycamps.
+                        </li>
+                        <li>
+                            Pioneered virtual youth leadership development programs during the peak of the COVID-19 pandemic. 
+                            Mentored 112 youth over the course of the 2021/22 school year, who collectively contributed over 
+                            3000 hours of community service.
+                        </li>
+                        <li>
+                            Designed tools to track and effectively implement safety procedures for summer daycamps, provided 
+                            childcare to families in need.
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+            </section>
             <aside>
-                <p>Marco had been working at City Centre since 2013, when he first started high school!</p>
+                <p>Fun Fact! Marco had been involved at City Centre since 2013, when he first started high school!</p>
             </aside>
-
-        </section>
-    
         </main>
     
 
     <footer>
-
+        
         <article>
-            <h2>Follow Marco!</h2>
-            <address>
-                <a href="https://www.linkedin.com/in/marco-yip/">LinkedIn</a>
-            </address>
-            <address>
-                <a href="https://github.com/merkoyep">GitHub</a>
-            </address>
+            <h2 id="follow-marco-header">Follow Marco!</h2>
+            <div class="socials">
+                <div id="linkedin">
+                    <a href="https://www.linkedin.com/in/marco-yip/">
+                        <img src="linkedin.png" alt="Linkedin image" height="50">
+                    </a>
+                    <address>
+                        <a href="">LinkedIn</a>
+                    </address>
+                </div>
+                <div id="github">
+                    <a href=https://github.com/merkoyep>
+                        <img src="Github.png" alt="github logo" height="50">
+                    </a>
+                    <address>
+                        <a href="https://github.com/merkoyep">GitHub</a>
+                    </address>
+                </div>
+            </div>
         </article>
 
     </footer>

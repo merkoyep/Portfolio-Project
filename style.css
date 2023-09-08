@@ -12,8 +12,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: left;
+    margin: 0;
 }
 h4 {
     margin: 0; /* Removes spacing between headings */
@@ -140,8 +141,8 @@ aside {
 
 #about-me-container {
     display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     border: solid;
     margin: 10px 0 0 0;
 }
@@ -176,63 +177,144 @@ aside {
     border-radius: 30px 30px 30px 30px;
 }
 #education-section {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
     margin: 20px 20px;
 }
 .education {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: "l l l h h h"
+                         "s s s s . ."
+                         "t t t t . ."
+                         "b b b b b b"
+                         "a a a a a a"
+                         "c c c c . .";
+    grid-auto-rows: max-content;
     border: solid;
     border-color: white;
-    width: 500px;
-    padding: 10px 10px;
+    padding: 20px;
 }
-.heading-education{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    padding: 10px 10px 20px 10px;
-    text-align: center;
+
+.education#dominican .logo {
+    grid-area: l;
+    background-image: url("DULogo.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+.education#UBC .logo {
+    grid-area: l;
+    background-image: url("ubc.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.education#langara .logo {
+    grid-area: l;
+    background-image: url("Langara.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.education h3 {
+    grid-area: h;
+    padding: 30px 0;
+}
+.education h4 {
+    grid-area: s;
+}
+.education h5 {
+    grid-area: t;
+}
+.education p {
+    grid-area: b;
+    margin: 0;
+}
+.education audio {
+    grid-area: a;
+}
+.education .courses {
+    grid-area: c;
+}
+
 #work-experience {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
     margin: 20px;
 
 }
 .experience {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "l l l p p p"
+                         "c c c c c ."
+                         "d d d d . ."
+                         "r r r r r r";
+    grid-gap: 1rem;
+    grid-auto-rows: max-content;
     border: solid;
-    width: 500px;
-    padding: 0px 20px;
-}
-.experience-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px 20px 20px 20px;
-}
-.experience-header h3 {
-    font-size: 1em;
-    padding: 20px
-}
-#ddtext {
-    font-size: 1.5em;
-}
-#c4logo {
-    background-color: white;
+    border-color: white;
+    padding: 20px 20px;
 }
 
-/* @media (min-aspect-ratio: 16/9){
-    .back-video{
-        width: 100%;
-        height: auto;
-    }
-@media (max-aspect-ratio: 16/9){
-    .back-video{
-        width: auto;
-        height: 100%;
-        }
-    } 
-} */
+.experience#devdegree .logo {
+    grid-area: l;
+    background-image: url("devdegreelogo.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.experience#cfc .logo {
+    grid-area: l;
+    background-image: url("cityofrichmond-logo.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.experience#ydc .logo {
+    grid-area: l;
+    background-image: url("c4logo.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.experience h3 {
+    grid-area: p;
+    padding: 30px 0;
+}
+
+.experience#devdegree h3 {
+    font-size: 1.5em;
+}
+
+.experience h4 {
+    grid-area: c;
+}
+.experience h5 {
+    grid-area: d;
+}
+.experience .responsibilities {
+    grid-area: r;
+}
+.experience ul {
+    padding: 10px;
+}
+.socials img {
+    border-radius: 500px;
+}
+
+.socials div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
